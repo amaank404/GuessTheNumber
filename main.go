@@ -25,7 +25,7 @@ func PlayGame() {
 
 	guessed_numbers := []int64{}
 
-	for i := 5; i > 0; i-- {
+	for i := 10; i > 0; i-- {
 		color.New(color.FgGreen).Printf("You have %d chances left to guess\n>", i)
 		input, err := reader.ReadString('\n')
 		HandleError(err)
